@@ -1,21 +1,13 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { setupListeners } from '@reduxjs/toolkit/dist/query';
-
-import { beersService } from 'services/beersService';
-
-// Reducers
-const combinedReducers = combineReducers({
-  [beersService.reducerPath]: beersService.reducer,
-});
+import { configureStore } from '@reduxjs/toolkit';
+import { setupListeners } from '@reduxjs/toolkit/query/react';
+import { beersService } from '../services/beersService';
 
 export const store = configureStore({
-  reducer: combinedReducers,
-
-  devTools: process.env.NODE_ENV !== 'production',
-
-  // Enabeling caching, invalidation, polling, and other useful features of `rtk-query`.
+  reducer: {
+    [beersService.reducerPath]: beersService.reducer,
+  },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat([beersService.middleware]),
+    getDefaultMiddleware().concat(beersService.middleware),
 });
 
 setupListeners(store.dispatch);

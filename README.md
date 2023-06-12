@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Code Structure and Packages
+
+### React Components: Why I Chose antd, TypeScript, and RTK Query
+
+In this project, I have utilized several powerful packages to enhance the development process and deliver a high-quality user interface. The main components I have chosen are antd, TypeScript, and RTK Query. Let's take a closer look at each of these packages and understand why I have selected them:
+
+### antd (Ant Design)
+
+I opted to use the antd library as it provides a comprehensive set of pre-designed React components that are aesthetically pleasing, highly customizable, and offer a consistent user experience. With antd, I can quickly build professional-looking interfaces by leveraging its extensive range of UI elements such as buttons, forms, modals, and tables. This helps me save development time and effort, ensuring a polished and visually appealing application.
+
+Furthermore, antd follows best practices in terms of accessibility, responsive design, and internationalization support. These qualities ensure that the application I build will be inclusive, responsive across different devices, and easily adaptable to various languages and locales.
+
+### TypeScript
+
+I have chosen TypeScript as the programming language for this project due to its numerous advantages over plain JavaScript. TypeScript adds static typing to JavaScript, enabling early detection of errors during development. This helps me catch bugs before runtime and ensures a more stable and reliable codebase.
+
+By leveraging TypeScript's strong type system, I can benefit from better code editor support, including autocompletion, type inference, and refactoring tools. This improves my productivity and reduces the likelihood of introducing subtle errors. TypeScript also enhances code readability and maintainability, making it easier for other developers to understand and collaborate on the project.
+
+In addition, TypeScript integrates seamlessly with React and its ecosystem, including popular libraries like antd. This synergy allows for enhanced type checking and helps ensure that the components I build are correctly integrated and used throughout the application.
+
+### RTK Query (Redux Toolkit Query)
+
+To handle data fetching and state management, I have employed RTK Query, a powerful data-fetching library built on top of Redux Toolkit. RTK Query simplifies and streamlines the process of fetching, caching, and synchronizing data in a React application.
+
+By utilizing RTK Query, I can define API endpoints and automatically generate hooks for performing CRUD operations on those endpoints. This abstraction significantly reduces boilerplate code and eliminates the need to manually manage complex network requests and caching logic. RTK Query also provides built-in support for optimistic updates, pagination, and automatic cache invalidation, making it an excellent choice for efficient and scalable data management.
+
+Moreover, RTK Query seamlessly integrates with Redux Toolkit, allowing me to leverage Redux's centralized state management capabilities when necessary. This combination enables me to maintain a single source of truth for application state while benefiting from RTK Query's simplified data fetching and caching.
+
+In summary, the adoption of antd, TypeScript, and RTK Query in this project helps me achieve a robust, visually appealing, and efficient React application. These packages enhance my development experience, improve code quality, and simplify data management, ultimately leading to a more seamless user experience.

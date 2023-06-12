@@ -1,0 +1,42 @@
+.socialLink {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &,
+  span {
+    direction: ltr;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 8px;
+
+    img {
+      transition: 0.2s;
+      filter: grayscale(1);
+      opacity: 0.8;
+    }
+
+    a,
+    span {
+      color: gray;
+      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    }
+
+    &:hover {
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+
+      a {
+        color: dodgerblue;
+      }
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+}

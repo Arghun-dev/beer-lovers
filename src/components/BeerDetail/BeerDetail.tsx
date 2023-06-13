@@ -68,7 +68,7 @@ const BeerDetail = () => {
         <Card style={{ marginBottom: 24 }}>
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={8}>
-              <Image src={image_url} alt={name} />
+              <Image src={image_url} alt={name} data-testid="beer-image" />
             </Col>
             <Col xs={24} sm={16}>
               <Title level={2}>{name}</Title>
@@ -125,7 +125,7 @@ const BeerDetail = () => {
                   <ShareBeerPopover
                     key="share"
                     title={name}
-                    link={`http://localhost:3000/beers/${id}`}
+                    link={`${process.env.REACT_APP_DOMAIN}/beers/${id}`}
                     placement="bottom"
                   >
                     <ShareAltOutlined key="share" style={{ marginRight: 8 }} />

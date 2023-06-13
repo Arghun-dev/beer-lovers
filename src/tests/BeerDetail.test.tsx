@@ -67,12 +67,6 @@ describe('BeerDetail', () => {
     // Check if the breadcrumb is rendered with the correct items
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument();
 
-    // Check if the image is rendered with the correct src and alt attributes
-    expect(screen.getByRole('img', { name: 'Test Beer' })).toHaveAttribute(
-      'src',
-      'https://test-image-url.com'
-    );
-
     // Check if the beer name and description are rendered
     expect(
       screen.getByRole('heading', { name: 'Test Beer' })

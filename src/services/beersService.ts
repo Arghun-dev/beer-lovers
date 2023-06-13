@@ -14,7 +14,7 @@ export const beersService = createApi({
   reducerPath: 'beersService',
   tagTypes: [TagTypeEnums.BEERS],
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.REACT_APP_BASE_API,
+    baseUrl: 'https://api.punkapi.com/v2/',
   }),
 
   endpoints: (builder) => ({

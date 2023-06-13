@@ -125,7 +125,7 @@ const BeerDetail = () => {
                   <ShareBeerPopover
                     key="share"
                     title={name}
-                    link={`${process.env.REACT_APP_DOMAIN_NAME}/beers/${id}`}
+                    link={`http://localhost:3000/beers/${id}`}
                     placement="bottom"
                   >
                     <ShareAltOutlined key="share" style={{ marginRight: 8 }} />

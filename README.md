@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Node.js
+
+You need to have node.js installed on your machine to be able to use npm. Preferably `node v16.15.1` Because I developed and installed packages with this version of Node. But the solution for this is to use `Docker` to build a Docker image.
+
 ## Available Script
 
 In the project directory, you can run:
